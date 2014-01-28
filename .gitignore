@@ -1,0 +1,34 @@
+ 
+ #Eclipse
+.classpath
+.project
+.settings/
+ 
+# Intellij
+.idea/
+*.iml
+*.iws
+ 
+# Mac
+.DS_Store
+ 
+# Maven
+log/
+target/
+
+#JDBC Properties File, nur das template soll versioniert werden
+jdbc.properties
+
+#android bin folder
+bin/
+
+#API Settings
+api_key.xml
+api_properites.xml
+
+
+/mobile/res/values/api_properties.xml
+/mobile/project.properties
+/mobile/res/values/api_key.xml
+
+/mobile/gen/com/google/android/gms/R.java

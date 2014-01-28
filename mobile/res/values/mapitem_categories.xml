@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- MapItem categories -->
+
+    <string name="arts_entertainment">Arts &amp; Entertainment</string>
+    <string name="college_university">College &amp; University</string>
+    <string name="food">Food</string>
+    <string name="nightlife">Nightlife</string>
+    <string name="outdoors_recreation">Outdoors &amp; Recreation</string>
+    <string name="shop_service">Shop &amp; Service</string>
+    <string name="travel_transport">Travel &amp; Transport</string>
+    <string name="residence">Residence</string>
+    <string name="other">Other</string>
+    <string name="eat_together">Meet and eat</string>
+    <string name="party">Party</string>
+    <string name="shopping">Shopping</string>
+    <string name="dancing">Dancing</string>
+    <string name="sightseeing">Sightseeing</string>
+    
+</resources>

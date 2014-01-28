@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin" 
+    android:background="@color/textview_background">
+
+    <EditText
+        android:id="@+id/register_user_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_user_name"
+        android:inputType="textEmailAddress" />
+    
+    <EditText
+        android:id="@+id/register_email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/register_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"/>
+    
+    <EditText
+        android:id="@+id/register_password_confirmation_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_password_confirm"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/register_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button" />
+
+</LinearLayout>

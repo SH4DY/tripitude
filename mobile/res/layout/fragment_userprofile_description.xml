@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_background" >
+
+    <ScrollView
+        android:id="@+id/scroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textview_background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fragment_header"
+                android:padding="@dimen/home_padding" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="100dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        style="@style/mapitem_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:text="@string/username"
+                        android:textColor="@color/textview_text_white" />
+
+                    <TextView
+                        android:id="@+id/user_email"
+                        style="@style/mapitem_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:text="@string/user_email_title"
+                        android:textColor="@color/textview_text_white" />
+
+                    <TextView
+                        android:id="@+id/user_rank"
+                        style="@style/mapitem_text_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:text="@string/user_rank_title"
+                        android:textColor="@color/textview_text_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/user_avatar"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:contentDescription="@string/image"
+                        android:scaleType="fitStart" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textview_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/home_padding" >
+
+                <TextView
+                    android:id="@+id/user_change_password"
+                    style="@style/mapitem_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glyphicons_book"
+                    android:drawablePadding="@dimen/text_icon_padding"
+                    android:inputType="none"
+                    android:text="@string/user_change_password_title" />
+
+                <TextView
+                    android:id="@+id/user_password_display"
+                    style="@style/mapitem_text_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:text="@string/user_password" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/home_padding" >
+
+                <TextView
+                    android:id="@+id/user_change_avatar"
+                    style="@style/mapitem_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glyphicons_book"
+                    android:drawablePadding="@dimen/text_icon_padding"
+                    android:inputType="none"
+                    android:text="@string/user_change_avatar_title" />
+
+                <TextView
+                    android:id="@+id/user_avatar_change_button"
+                    style="@style/mapitem_text_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:text="@string/user_change_avatar_text" />
+            </LinearLayout>
+            
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/home_padding" >
+
+                <TextView
+                    android:id="@+id/user_change_language_title"
+                    style="@style/mapitem_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glyphicons_book"
+                    android:drawablePadding="@dimen/text_icon_padding"
+                    android:inputType="none"
+                    android:text="@string/user_language_title" />
+
+                <TextView
+                    android:id="@+id/user_change_language_button"
+                    style="@style/mapitem_text_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:text="English" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+    <FrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_background"
+            android:gravity="center"
+            android:padding="20dip" >
+
+            <ProgressBar
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

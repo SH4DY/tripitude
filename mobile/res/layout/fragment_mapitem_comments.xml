@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_background" >
+
+    <ScrollView
+        android:id="@+id/scroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/map_picture_line"
+        android:layout_alignParentTop="true"
+        android:background="@color/textview_background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/home_padding" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/mapitem_comments_title"
+                    style="@style/mapitem_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/glyphicons_comments"
+                    android:drawablePadding="@dimen/text_icon_padding"
+                    android:inputType="none"
+                    android:text="@string/comment_title" />
+
+                <Button
+                    android:id="@+id/mapitem_comment_post_btn"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_alignBottom="@+id/mapitem_comments_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mapitem_comments_title"
+                    android:drawableLeft="@drawable/glyphicons_plus"
+                    android:drawablePadding="@dimen/text_icon_padding"
+                    android:text="@string/post_comment" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/mapitem_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    
+</RelativeLayout>

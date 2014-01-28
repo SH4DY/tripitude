@@ -1,0 +1,79 @@
+package at.tuwien.ase.tripidude.models;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EventCategory {
+
+    private Long id;
+	
+	private String name;
+
+	private List<Event> events = new ArrayList<Event>();
+	
+	public EventCategory() {}
+
+	public EventCategory(String name) {
+		super();
+		this.name = name;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Event> getEvents() {
+		return events;
+	}
+
+	public void setEvents(List<Event> events) {
+		this.events = events;
+	}
+
+	@Override
+	public String toString() {
+		// without events for readability
+		return "EventCategory [id=" + id + ", name=" + name + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		// without events, cause events are fetched lazily and so 2 objects wouldnt be equal before and after fetching
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		// without events, cause events are fetched lazily and so 2 objects wouldnt be equal before and after fetching
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		EventCategory other = (EventCategory) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+}

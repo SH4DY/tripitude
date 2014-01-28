@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/frame_background"> 
+    
+    <TextView 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculating route..."
+        android:textSize="26sp"
+        android:padding="20dip"
+        android:gravity="center"
+        android:textColor="@color/textview_text"/>
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame_background" >
+
+        <Button
+            android:id="@+id/button_create_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:background="@drawable/btn_red"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="@string/create_route"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button_add_hotspot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:layout_toRightOf="@id/button_create_route"
+            android:background="@drawable/btn_blue"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="@string/add_hotspot"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/button_create_route"
+            android:background="@drawable/shadow" />
+
+        <ListView
+            android:id="@+id/hotspot_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/button_create_route"
+            android:divider="@drawable/shadow"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame_background" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_background"
+            android:gravity="center"
+            android:padding="20dip" >
+
+            <ProgressBar
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

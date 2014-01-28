@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:padding="@dimen/activity_horizontal_margin" 
+    android:background="@color/textview_background">
+
+    <EditText
+        android:id="@+id/login_email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_email"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/login_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button" />
+
+    <TextView
+        android:id="@+id/go_to_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_link"
+        android:gravity="center"
+        android:textColor="@color/link"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

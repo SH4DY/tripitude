@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/event_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/event_name"
+        style="@style/mapitem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/edit_text_margin"
+        android:drawablePadding="@dimen/text_icon_padding"
+        android:inputType="none"
+        android:paddingLeft="@dimen/home_padding"
+        android:paddingRight="@dimen/home_padding"
+        android:text="Eventname" />
+
+    <TextView
+        android:id="@+id/event_time"
+        style="@style/mapitem_text_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:paddingLeft="@dimen/home_padding"
+        android:paddingRight="@dimen/home_padding"
+        android:text="15.04.2004" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/textview_divider" />
+
+</LinearLayout>

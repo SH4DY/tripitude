@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/textview_background" >
+
+    <!-- Event Name, Location, Time, Category, Description -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fragment_header"
+            android:orientation="vertical"
+            android:padding="@dimen/home_padding" >
+
+            <TextView
+                android:id="@+id/event_name_field"
+                style="@style/mapitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@string/event_name_title"
+                android:textColor="@color/textview_text_white" />
+
+            <TextView
+                android:id="@+id/category_field"
+                style="@style/mapitem_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@string/event_category_title"
+                android:textColor="@color/textview_text_white" />
+
+            <TextView
+                android:id="@+id/event_user"
+                style="@style/mapitem_text_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@string/created_by_title"
+                android:textColor="@color/textview_text_white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textview_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/home_padding" >
+
+            <TextView
+                android:id="@+id/event_location_title"
+                style="@style/mapitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pin_standard"
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:inputType="none"
+                android:text="@string/event_location_title" />
+
+            <TextView
+                android:id="@+id/event_location_field"
+                style="@style/mapitem_text_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eissalon Nr. 5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textview_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/home_padding" >
+
+            <TextView
+                android:id="@+id/event_time_title"
+                style="@style/mapitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/glyphicons_clock_grey"
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:inputType="none"
+                android:text="@string/event_time_title" />
+
+            <TextView
+                android:id="@+id/event_time_field"
+                style="@style/mapitem_text_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24.04.2004 15:30" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textview_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/home_padding" >
+
+            <TextView
+                android:id="@+id/mapitem_description_title"
+                style="@style/mapitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/glyphicons_book"
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:inputType="none"
+                android:text="@string/description_title" />
+
+            <TextView
+                android:id="@+id/description_field"
+                style="@style/mapitem_text_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_description_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

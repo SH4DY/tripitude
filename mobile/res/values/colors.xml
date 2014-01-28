@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="link">#1b9ef0</color>
+    <color name="textview_background">#F5F5F5</color>
+    <color name="textview_title">#000000</color>
+    <color name="textview_text">#585858</color>
+    <color name="textview_divider">#BABABA</color>
+    <color name="frame_background_start">#DCDCDC</color>
+    <color name="frame_background_end">#F7F7F7</color>
+    <color name="button_background">#DCDCDC</color>
+    <color name="route">#FF0000</color>
+    <color name="textview_text_white">#FFFFFF</color>
+    <color name="fragment_header">#1b9ef0</color>
+    <color name="button_blue">#00BFF3</color>
+    <color name="button_blue_pressed">#0096F3</color>
+    <color name="button_red">@android:color/holo_red_light</color>
+    <color name="button_red_pressed">@android:color/holo_red_dark</color>
+    <color name="button_inactive">#DCDCDC</color>
+    <color name="button_plus">#57b846</color>
+    <color name="button_minus">#de1a22</color>
+    
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frame_background" >
+
+    <ScrollView
+        android:id="@+id/scroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/textview_background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/highscores_title"
+                style="@style/mapitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/glyphicons_group"
+                android:drawablePadding="@dimen/text_icon_padding"
+                android:inputType="none"
+                android:padding="@dimen/home_padding"
+                android:text="@string/highscores_title" />
+
+            <LinearLayout
+                android:id="@+id/highscore_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <FrameLayout
+        android:id="@+id/highscores_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_background"
+            android:gravity="center"
+            android:padding="20dip" >
+
+            <ProgressBar
+                android:layout_width="30dip"
+                android:layout_height="30dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

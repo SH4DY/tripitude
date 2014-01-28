@@ -1,0 +1,51 @@
+body {
+	padding-top: 70px;
+}
+
+.container {
+	width: 100%;
+	height:100%;
+}
+
+ul.nav.nav-pills .divider-vertical {
+	height: 40px;
+    margin: 0 9px;
+    border-left: 1px solid #e5e5e5;
+/*     border-right: 1px solid #FFF; */
+}
+
+.rounded-corner-box {
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #e5e5e5;
+	border-radius: 4px;
+	border-style: solid;
+	box-shadow: none;
+	padding: 15px;
+}
+
+.alert-js {
+	position: fixed;
+	top: 60px;
+	width: 80%;
+	z-index: 100;
+	margin: 0 auto;
+
+	opacity: 0.85;
+}
+
+.tripitude-logo {
+	height: 51px;
+    position: absolute;
+}
+
+.container > .tripitude-header {
+	margin-left: 50px;
+}
+
+.image-thumb {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	position: relative;
+}

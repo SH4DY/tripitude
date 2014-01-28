@@ -1,0 +1,136 @@
+.map-info-window-categories, #mapItemDetails-categories,
+#mapItemDetails-comments .glyphicon-time, #mapItemDetails-comments .mapItemDetails-comment-time-ago, .comment-time-ago {
+	color: #999999;
+}
+
+.mapItemCategories-list-item {
+	padding: 1em;
+}
+
+#mapItemCategories-list {
+	min-width: 220px;
+}
+
+#map-searchbar {
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #e5e5e5;
+	border-radius: 4px 4px 0 0;
+	border-style: solid;
+	box-shadow: none;
+	padding: 5px;
+}
+
+#map-searchbar li {
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+
+.map-info-window-link-bar {
+	text-align: right;
+	margin-top: 1em;
+}
+
+.map-info-window-link-bar button {
+	margin-right: 0.5em;
+}
+
+#map-wrapper {
+	position: relative;
+}
+
+#map-close-route {
+	
+	float: right;
+}
+
+#map-close-route-btn {
+	display: none;
+}
+
+#mapItemDetails .modal-dialog, #map-modal .modal-dialog {
+	width: 95%;
+ 	height:100%; 
+}
+
+#map-modal .modal-body{
+	height: 600px; 
+}
+#mapItemDetails li {
+	list-style: none;
+}
+
+#mapItemDetails ul {
+	list-style: none;
+	margin-top: 1em;
+	padding: 0;
+}
+
+#mapItemDetails-comment-list-wrapper {
+    max-height: 200px;
+    overflow: auto;
+    padding: 0;
+}
+
+#mapItemDetails-comments hr, .comment hr{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#mapItemDetails-comments .mapItemDetails-comment-user, .comment-user{
+	margin-right: 1em;
+}
+ 
+.comment-info {
+	margin-bottom: 0.5em;
+}
+
+#mapItemDetails-gallery {
+	overflow: auto;
+}
+
+
+.icon-hotspot {
+  background: url("../images/pin_standard_hotspot.png") no-repeat;
+}
+
+.icon-route {
+  background: url("../images/pin_standard_route.png") no-repeat;
+}
+
+#mapItemDetails-title {
+	display: block;
+	padding-left: 17px;
+	height: 36px;
+	text-indent: 25px;
+	line-height: 33px;
+	margin-top: 10px;
+}
+
+.mapItemDetails-rating-wrapper h4 {
+	float: left;
+	margin-right: 2em;
+}
+
+.mapItemDetails-rating-wrapper button {
+	
+}
+
+.mapItemDetails-rating-btn {
+	text-align: center;
+	margin-right: 1em;
+	float: left
+}
+
+.mapItemDetails-rating-info {
+	
+}
+
+#mapItemDetails .modal-body {
+	clear: both;
+}
+
+.mapItemDetails-rating-wrapper {
+	overflow: auto;
+}
+

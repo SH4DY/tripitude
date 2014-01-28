@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/textview_background" >
+
+    <!-- Name -->
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textview_background"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp" >
+
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/mapitem_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:hint="@string/search_name"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/glyphicons_list"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/textview_divider" />
+
+    <!-- Category -->
+
+    <LinearLayout
+        android:id="@+id/category_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_layout"
+        android:background="@color/textview_background"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp" >
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eventtime_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_field"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="1dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/search_eventtime_field"
+            style="@style/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/search_eventtime_field" />
+
+        <Button
+            android:id="@+id/button_begin_eventtime"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_default"
+            android:text="@string/button_begin_eventtime" />
+
+        <TextView
+            android:id="@+id/search_eventtime_betweenfield"
+            style="@style/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/search_eventtime_betweenfield" />
+        
+        <Button
+            android:id="@+id/button_end_eventtime"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_default"
+            android:text="@string/button_end_eventtime" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_field"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventtime_field"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="1dp" >
+
+        <!-- All Button -->
+
+        <Button
+            android:id="@+id/button_all"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_all"
+            android:text="@string/all_button" />
+
+        <!-- Hotspots Button -->
+
+        <Button
+            android:id="@+id/button_hotspot"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_hotspot"
+            android:text="@string/hotspot_button" />
+
+        <!-- Route Button -->
+
+        <Button
+            android:id="@+id/button_route"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_route"
+            android:text="@string/route_button" />
+
+        <!-- Event Button -->
+
+        <Button
+            android:id="@+id/button_event"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_event"
+            android:text="@string/event_button" />
+
+        <!-- Search Button -->
+
+        <Button
+            android:id="@+id/button_search"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default"
+            android:text="@string/search_button" />
+    </LinearLayout>
+
+</RelativeLayout>
